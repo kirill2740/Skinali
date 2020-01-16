@@ -11,6 +11,8 @@ body
 .container
 	width: 1169px
 	margin: 0 auto
+.bg-gray
+	background-color: $bg-color
 .button
 	padding: 23px 43px
 	text-transform: uppercase
@@ -19,6 +21,25 @@ body
 	+bold
 	color: #fff
 	cursor: pointer
+.input
+	height: 80px
+	border: 1px solid #dddddd
+	padding-left: 30px
+.checkbox
+	display: none
+	&:checked + label::before
+			background-color: $main-color
+	&-label
+		display: flex
+		align-items: center
+		margin-right: 40px
+		cursor: pointer
+		&::before
+			content: ''
+			width: 30px
+			height: 30px
+			border: 1px solid #dddddd
+			margin-right: 20px
 
 @media (max-width: 1199px)
 	.container

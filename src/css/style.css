@@ -12,7 +12,19 @@ body { font-family: 'Proxima Nova Light', sans-serif; color: #262626; }
 
 .container { width: 1169px; margin: 0 auto; }
 
+.bg-gray { background-color: #f1f1f1; }
+
 .button { padding: 23px 43px; text-transform: uppercase; border: none; background-color: #507fe1; font-family: 'Proxima Nova Semibold',	sans-serif; color: #fff; cursor: pointer; }
+
+.input { height: 80px; border: 1px solid #dddddd; padding-left: 30px; }
+
+.checkbox { display: none; }
+
+.checkbox:checked + label::before { background-color: #507fe1; }
+
+.checkbox-label { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 40px; cursor: pointer; }
+
+.checkbox-label::before { content: ''; width: 30px; height: 30px; border: 1px solid #dddddd; margin-right: 20px; }
 
 @media (max-width: 1199px) { .container { max-width: 960px; } }
 
@@ -72,4 +84,32 @@ body { font-family: 'Proxima Nova Light', sans-serif; color: #262626; }
 .hero__button:hover { background-color: #3866c7; -webkit-transition: 0.2s; transition: 0.2s; }
 
 @media (max-width: 991px) { .hero { background-size: cover; background-position: top left 35%; } }
+
+.offer { padding: 129px 0; }
+
+.offer-block { background: #fff url("../img/offer/form-bg.jpg") no-repeat center right; background-size: contain; -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); padding: 80px; margin-top: -200px; }
+
+.offer__title { font-size: 25px; font-family: 'Proxima Nova Semibold',	sans-serif; text-transform: uppercase; margin-bottom: 20px; }
+
+.offer__subtitle { display: block; font-size: 21px; margin-bottom: 48px; }
+
+.form__row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; max-width: 900px; margin-bottom: 25px; }
+
+.form__row:last-child { margin-bottom: 0; }
+
+.form__label { font-size: 17px; display: block; margin-bottom: 15px; }
+
+.form__group { -ms-flex-preferred-size: 33.33%; flex-basis: 33.33%; }
+
+.form__input { width: 100%; border-right-width: 0px; }
+
+.form__button { height: 80px; width: 100%; }
+
+.last { border-right-width: 1px; }
+
+@media (max-width: 1199px) { .offer-block { background-position: center right -120px; } }
+
+@media (max-width: 991px) { .offer-block { background-position: center right -145px; } }
+
+@media (max-width: 768px) { .offer-block { background: none; background-color: #fff; } }
 /*# sourceMappingURL=style.css.map */
